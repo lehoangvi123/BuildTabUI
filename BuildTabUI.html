@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildTabUI</title> 
+    <link rel="stylesheet" href="./BuildTabUI.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="tabs">
+        <div class="tab-buttons" role="tablist">  
+
+            <button class="tab-item tab-btn active" role="tab" aria-selected="true">
+                <i class="tab-icon fas fa-code"></i> React
+            </button>
+            <button class="tab-item tab-btn" role="tab" aria-selected="false">
+                <i class="tab-icon fas fa-cog"></i> Angular
+            </button>
+            <button class="tab-item tab-btn" role="tab" aria-selected="false">
+                <i class="tab-icon fas fa-plus-circle"></i> Ember
+            </button>
+            <button class="tab-item tab-btn" role="tab" aria-selected="false">
+                <i class="tab-icon fas fa-pen-nib"></i> Vue.js
+            </button>
+            <div class="line"></div>
+        </div> 
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-react">
+                <h1>React</h1> 
+                <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+            </div> 
+            <div class="tab-pane" id="tab-angular">
+                <h1>Angular</h1>
+                <p>Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p> 
+            </div>
+            <div class="tab-pane" id="tab-ember">
+                <h1>Ember.js</h1>
+                <p>Ember.js is an open-source JavaScript framework for building ambitious web applications.</p>
+            </div>  
+            <div class="tab-pane" id="tab-vue">
+                <h1>Vue.js</h1>
+                <p>Vue.js is an open-source JavaScript framework for building user interfaces.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./BuildTabUI.js"></script>
+</body>
+</html>
